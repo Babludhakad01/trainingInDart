@@ -37,16 +37,20 @@ void main(){
     print("Employee Id : ${name['id']}, Employee name : ${name['name']} , Salary ${name['salary']}");
   }
 
- employees =  employees.map((emp){
-   emp['salary'] = emp['salary']*1.8;
-   return emp;
- }).toList();
+ // employees =  employees.map((emp){
+ //   emp['salary'] = emp['salary']*1.8;
+ //   return emp;
+ // }).toList();
 
 
-  employees.add({'id':4, 'name': 'Bablu', 'department': 'Flutter', 'salary': 8000});
-  print("After Employee data");
-  // All Name and Salary
-  for(var name in employees){
-    print("Employee Id : ${name['id']}, Employee name : ${name['name']} , Salary ${name['salary']}");
-  }
-}
+  var names = employees.map((emp)=> emp['name']).toList();
+
+  print("All employees name ${names}");
+
+//   employees.add({'id':4, 'name': 'Bablu', 'department': 'Flutter', 'salary': 8000});
+//   print("After Employee data");
+//   // All Name and Salary
+//   for(var name in employees){
+//     print("Employee Id : ${name['id']}, Employee name : ${name['name']} , Salary ${name['salary']}");
+//   }
+ }

@@ -2,8 +2,8 @@ import '../models/Product.dart';
 
 class HomeScreen {
   List<Product> products = [
-    Product(name: "Nike", price: 1200, description: "Running Shoes"),
-    Product(name: "Asian", price: 1800, description: "Casual Shoes"),
+    Product( "Nike",  1200,  "Running Shoes"),
+    Product( "Asian",  1800,  "Casual Shoes"),
   ];
 
   void showProduct() {

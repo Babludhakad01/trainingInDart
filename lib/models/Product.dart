@@ -4,5 +4,11 @@ class Product {
   final String description;
 
   //Constructor
-  Product({required this.name, required this.price, required this.description});
+  Product( this.name,  this.price,  this.description);
+
+  @override
+  String toString() {
+
+    return "name: ${name}, price: ${price}, description: ${description}";
+  }
 }
